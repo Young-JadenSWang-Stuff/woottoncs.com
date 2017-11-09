@@ -3,3 +3,9 @@ body1 {
     font-family: "Courrier New";
     color: white;
 }
+
+.header{
+    border: 7px groove red;
+    background: #FF3333;
+
+}
