@@ -20,12 +20,6 @@ body2 {
 .body{
     border: 5px groove blue;
     background: blue;
-    
     margin-top: 7px;
-
     padding-left:7px;
-    }
-
-p{
-    text-indent: 50px;
 }
