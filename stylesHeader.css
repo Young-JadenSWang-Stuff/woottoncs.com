@@ -26,6 +26,9 @@ body2 {
 }
 
 .ads{
+    text-align: center;
+    font-family: "Courrier New";
+    color: white;
     border : 5px groove black;
     background: blue;
     margin-top: 7px;
