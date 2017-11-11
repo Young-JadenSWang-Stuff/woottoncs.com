@@ -1,4 +1,4 @@
-body1 {
+#body1 {
     text-align: center;
     font-family: "Courrier New";
     color: white;
@@ -10,8 +10,8 @@ body1 {
 
 }
 
-body2 {
-    
+#body2 {
+
     text-align: center;
     font-family: "Courrier New";
     color: white;
@@ -29,7 +29,7 @@ body2 {
     text-align: center;
     font-family: "Courrier New";
     color: white;
-    
+
     border : 4px groove black;
     background: blue;
     margin-top: 7px;
