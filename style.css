@@ -5,6 +5,7 @@
 }
 
 .headerBox{
+    border-radius: 25px;
     border: 7px groove red;
     background: #FF3333;
 
@@ -24,6 +25,7 @@
 }
 
 .blueBoxBody{
+    border-radius: 25px;
     border: 5px groove blue;
     background: blue;
     margin-top: 7px;
@@ -31,13 +33,14 @@
     padding-bottom: 10px;
 }
 
-.ads{
+.footer{
+    border-radius: 25px;
     text-align: center;
     font-family: "Courrier New";
-    color: white;
+    color: red;
 
-    border : 4px groove black;
-    background: blue;
+    border : 1px groove black;
+    background: yellow;
     margin-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
