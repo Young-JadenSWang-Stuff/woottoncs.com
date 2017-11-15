@@ -17,6 +17,11 @@
     color: white;
 }
 
+.body{
+    background-color:red;    
+    
+}
+
 #bulletPoints{
     margin-left:400px;
     text-align: left;
