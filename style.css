@@ -6,9 +6,12 @@
 
 .headerBox{
     border-radius: 25px;
-    border: 7px groove red;
+    border: 7px red;
     background: #FF3333;
+}
 
+.body{
+    margin: 0px 0px 0px 0px;
 }
 
 #bodyHeader {
@@ -27,18 +30,17 @@
 
 .blueBoxBodyNotes{
     border-radius: 25px;
-    border: 5px groove blue;
     background: blue;
-    margin-top: 7px;
+    margin: 3px 0px 0px 0px;
     padding-left:7px;
     padding-bottom: 10px;
 }
 
 .greenBoxBodyQuizzes{
+    margin: 3px 0px 0px 0px;
     border-radius: 25px;
-    border: 5px groove green;
+    border: 5px green;
     background: green;
-    margin-top: 7px;
     padding-left: 7px;
     padding-bottom: 10px;
 }
@@ -49,7 +51,6 @@
     font-family: "Courrier New";
     color: red;
 
-    border : 1px groove black;
     background: yellow;
     margin-top: 7px;
     padding-left: 7px;
