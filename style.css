@@ -1,15 +1,20 @@
+menuBar{
+    position: fixed;
+    top: 0;
+}
+
 #headerFormat {
     text-align: center;
-    font-family: "Courrier New";
+    font-family: "Open Sans";
     color: white;
 }
 
 .header{
-    margin: 88px -30px 0px -30px;
+    margin: 0px -30px 0px -30px;
     border: 7px red;
     background: red;
-    
 }
+
 .headerBox{
     margin: -10px -10px -10px -10px;
     border: 7px red;
@@ -22,7 +27,7 @@
 
 #bodyHeader {
     text-align: center;
-    font-family: "Courrier New";
+    font-family: "Open Sans";
     color: white;
 }
 
@@ -30,30 +35,21 @@
     margin-left:22%;
     margin-right: 22%;
     text-align: left;
-    font-family: "Courrier New";
+    font-family: "Open Sans";
     color: white;
-}
-
-.blueBoxBodyNotes{
-    border-radius: 25px;
-    background: blue;
-    margin: 3px 0px 0px 0px;
-    padding-left:7px;
-    padding-bottom: 10px;
 }
 
 .greenBoxBodyQuizzes{
     margin: 3px 0px 0px 0px;
-    border-radius: 25px;
-    border: 5px green;
-    background: green;
+    border: 5px #4CAF50;
+    background: #4CAF50;
     padding-left: 7px;
     padding-bottom: 10px;
 }
 
 .footer{
     text-align: center;
-    font-family: "Courrier New";
+    font-family: "Open Sans";
     color: red;
     margin: -10px -10px -10px -10px;
     background: #FF0;
