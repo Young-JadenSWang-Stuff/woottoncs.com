@@ -1,7 +1,86 @@
-menuBar{
+/*top blue menu dropdown bar*/
+
+.topbar {
+    overflow: visible;
+    background-color: #333;
+    font-family: "Open Sans";
+    float: left;
+    list-style-type: none;
     position: fixed;
     top: 0;
+    width: 100%;
 }
+
+    .topbar a {
+        float: inherit;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        .topbar a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+/*The Dropdown Portion*/
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4CAF50;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    color: black;
+    margin-top: 47px;
+}
+
+    .dropdown-content a {
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #333;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #333;
+}
+
+/*body*/
+
+body {
+    background-color: #333;
+    margin: 0;
+}
+
+/*the red header*/
 
 #headerFormat {
     text-align: center;
@@ -9,13 +88,13 @@ menuBar{
     color: white;
 }
 
-.header{
-    margin: 0px -30px 0px -30px;
-    border: 7px red;
-    background: red;
+.header {
+    margin: 50px 0px 0px 0px;
+    border: 7px #FF3232;
+    background: #FF1111;
 }
 
-.headerBox{
+.headerBox {
     margin: -10px -10px -10px -10px;
     border: 7px red;
     background: red;
@@ -25,21 +104,25 @@ menuBar{
     right: 0;
 }
 
+/*titles for pages*/
+
 #bodyHeader {
     text-align: center;
     font-family: "Open Sans";
     color: white;
 }
 
-#bulletPoints{
-    margin-left:22%;
+#bulletPoints {
+    margin-left: 22%;
     margin-right: 22%;
     text-align: left;
     font-family: "Open Sans";
     color: white;
 }
 
-.greenBoxBodyQuizzes{
+/*green boxes surrounding quizzes*/
+
+.greenBoxBodyQuizzes {
     margin: 3px 0px 0px 0px;
     border: 5px #4CAF50;
     background: #4CAF50;
@@ -47,12 +130,10 @@ menuBar{
     padding-bottom: 10px;
 }
 
-.footer{
+.footer {
     text-align: center;
     font-family: "Open Sans";
     color: red;
     margin: -10px -10px -10px -10px;
     background: #FF0;
 }
-
-
