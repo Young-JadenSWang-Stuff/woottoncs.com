@@ -82,7 +82,7 @@
  * See adjacent selector for more.
  * https://www.w3.org/TR/CSS21/selector.html#adjacent-selectors
  */
-#quiz-dropdown-button:hover + .dropdown-content {
+#quiz-dropdown-button:hover + .dropdown-content, .dropdown-content:hover  {
     display: block;
 }
 
