@@ -16,27 +16,30 @@
 <body>
     <div class="topbar">
         <a href="#">Home</a>
-        <!-- 
-            1. Keep habit of sustaining whatever you are using. Don't switch between buttons
-            and anchor links. 
-            2. For DOM selectors that will only be used once, or is the only DOM element in the
-            page, use "id" and select with "#selector" instead of class for better organizing
-            3. Ignore my code editor's weird formatting on a tags. You can put it in one line
-            if you want to.
-        -->
-        <a class="dropbtn" id="quiz-dropdown-button">Quizzes
+
+        <!--dropdown for quizzes-->
+        <a class="dropbtn" id="dropdown-button">
+            Quizzes
             <i class="fa fa-caret-down"></i>
         </a>
-        <!-- Dropdown -->
-        <!-- 
-            In order for CSS adjacent selector to work, this entire content element has to be right 
-            next to the trigger element.
-        -->
         <div class="dropdown-content">
-            <a href="#oop">11/15/17: Explain OOP</a>
             <a href="#12_4_2017">12/4/17: OOP Prog and Multiple Choice </a>
+            <a href="#11_15_2017">11/15/17: Explain OOP</a>
         </div>
 
+        <!--dropdown for notes-->
+        <a class="dropbtn" id="dropdown-button">
+            Notes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="#OOP">Intro to Object Oriented Programming</a>
+            <a href="#AccessingOtherObjects">Acessing Other Objects of the Same Class</a>
+            <a href="#FileIO" a>Fundamentals of File I/O</a>
+            <a href="#ResizingArrays">Resizing An Array</a>
+        </div>
+
+        <!--about button-->
         <a href="#footer">About</a>
     </div>
 
@@ -63,7 +66,26 @@
                 <br />
             </div>
         </div>
-        <!-- content starts here -->
+
+        <!--------------------------- content starts here ------------------------->
+
+        <div id="ResizingArrays"></div>
+        <div id="bodyHeader">
+            <h3>
+                <br /> How To Resize Arrays
+            </h3>
+
+            <a href="https://www.dropbox.com/s/djljuku4bugz5le/ResizeAnArray.java?dl=0">
+                <img src="https://imgur.com/irGcwGI.png">
+            </a>
+        </div>
+
+        <div id="bulletPoints">
+            - Resizing an array requires the recopying of the entire old array and placing it into a new larger one<br />
+            - Create a temporary array an element larger<br />
+            - Loop through your original array and copy all data into the second array<br />
+            - Return the second array<br />
+        </div>
 
         <div class="greenBoxBodyQuizzes">
             <div id="bodyHeader">
@@ -77,7 +99,7 @@
                         <br /> - Design/Testing
                         <br /> - Static Methods and Instance Variables
                         <br /> -
-                        <!--<a href="#resizeArrays"> Resize Arrays</a>-->
+                        <a href="#ResizingArrays"> Resize Arrays</a>
                         Resize Arrays emphasized a lot in class, high potential to be on the test
                         <br />
                     </p1>
@@ -85,6 +107,8 @@
             </div>
         </div>
 
+        <!--Accessing Other Objects of the same Class-->
+        <div id="AccessingOtherObjects"></div>
         <div id="bodyHeader">
             <h3>
                 <br /> Short Notes on Accessing Other Objects of the Same Class
@@ -94,19 +118,24 @@
             </a>
         </div>
 
-        <div id="oop"></div>
         <div id="bulletPoints">
             - Despite instance variables being marked private, the variables can still be accessed because the class is created and owned
             by you, the class programmer
             <br /> - To Access the instance variable, the object must be of the same class
             <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
+            <!---->
+            <!--Div for Quiz on OOP on 11/15/2017-->
+            <div id="11_15_2017"></div>
+            <!---->
             or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
         </div>
+
         <div class="greenBoxBodyQuizzes">
             <div id="bodyHeader">
                 <h3>
                     <br /> Quiz Date: 11/15/2017
                 </h3>
+
                 <div id="bulletPoints">
                     <p1>
                         - You must be able to explain in english, what the relationships between a CLASS PROGRAMMER a CLIENT PROGRAMMER, and a USER
@@ -115,11 +144,15 @@
                         <br /> - No Multiple Choice will be on the quiz
                         <br /> - Quoting Turner: "You do not need to repeat the question back to him on the paper, this may save
                         some of you some time.
+                        <br /> Use other(the incoming object name) and .[Variable Name]
                         <br />
                     </p1>
                 </div>
             </div>
         </div>
+
+        <!--Div for Object Oriented Programming-->
+        <div id="OOP"></div>
         <div id="bodyHeader">
             <h3>
                 <br /> Object Oriented Programming
@@ -138,6 +171,10 @@
                 <br /> - All HELPER functions must be set as private as the client should not be able to use these methods
             </p1>
         </div>
+
+        <!--Notes On File IO-->
+        <div id="FileIO"></div>
+
         <div id="bodyHeader">
             <h3>
                 <br /> File Input/Output
@@ -162,8 +199,9 @@
             <div class="footer">
                 <h4>
                     <br /> Created and Managed by Jaden Wang
-                    <br/> Massive Massive Thanks to Mingjie Jiang at
-                    <a href="https://mingjie.info/">https://mingjie.info/
+                    <br /> Massive Massive Thanks to Mingjie Jiang at
+                    <a href="https://mingjie.info/">
+                        https://mingjie.info/
                         <a /> teaching me the fundamentals of HTML and CSS
                         <br />
                 </h4>
