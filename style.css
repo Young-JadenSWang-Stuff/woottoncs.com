@@ -34,7 +34,6 @@
     font-size: 15px;
     border: none;
     cursor: pointer;
-    position: fixed;
 }
 
 .dropdown {
@@ -50,7 +49,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     color: black;
-    margin-top: 47px;
+    margin-top: 48px;
 }
 
     .dropdown-content a {
@@ -65,12 +64,17 @@
             background-color: #333;
         }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown:hover .dropbtn {
     background-color: #333;
+}
+
+/* 
+ * This is slightly more higher level.
+ * See adjacent selector for more.
+ * https://www.w3.org/TR/CSS21/selector.html#adjacent-selectors
+ */
+#quiz-dropdown-button:hover + .dropdown-content, .dropdown-content:hover {
+    display: block;
 }
 
 /*body*/
@@ -90,6 +94,8 @@ body {
 
 .header {
     margin: 50px 0px 0px 0px;
+    /* Padding added for styling purposes */
+    padding-top: 20px;
     border: 7px #FF3232;
     background: #FF1111;
 }
@@ -136,4 +142,8 @@ body {
     color: red;
     margin: -10px -10px -10px -10px;
     background: #FF0;
+}
+
+#main {
+    top: 50px;
 }
