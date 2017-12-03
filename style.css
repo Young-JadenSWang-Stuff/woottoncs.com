@@ -34,7 +34,15 @@
     font-size: 15px;
     border: none;
     cursor: pointer;
-    position: fixed;
+    /* 
+     * position: fixed;
+     * This line makes your DOM element as "fixed",
+     * which makes it float on top of other elements 
+     * in line regardless of their other settings. Since
+     * your about tab later have a lower z-value, 
+     * your quiz link floats on top of the new link.
+     * Removed to fix.
+     */
 }
 
 .dropdown {
@@ -50,7 +58,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 10;
     color: black;
-    margin-top: 47px;
+    margin-top: 50px;
 }
 
     .dropdown-content a {
@@ -65,12 +73,17 @@
             background-color: #333;
         }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .dropdown:hover .dropbtn {
     background-color: #333;
+}
+
+/* 
+ * This is slightly more higher level.
+ * See adjacent selector for more.
+ * https://www.w3.org/TR/CSS21/selector.html#adjacent-selectors
+ */
+#quiz-dropdown-button:hover + .dropdown-content {
+    display: block;
 }
 
 /*body*/
