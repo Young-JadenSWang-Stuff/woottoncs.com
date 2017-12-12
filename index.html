@@ -35,8 +35,9 @@
         <div class="dropdown-content">
             <a href="#OOP">Intro to Object Oriented Programming</a>
             <a href="#AccessingOtherObjects">Acessing Other Objects of the Same Class</a>
-            <a href="#FileIO" a>Fundamentals of File I/O</a>
+            <a href="#FileIO">Fundamentals of File I/O</a>
             <a href="#ResizingArrays">Resizing An Array</a>
+            <a href="#Enum">Enum Manipulation</a>
         </div>
 
         <!--about button-->
@@ -67,6 +68,44 @@
         </div>
 
         <!--------------------------- content starts here ------------------------->
+        <!--Div for Enum Manipulation-->
+        <div id="Enum"></div>
+
+        <div id="bodyHeader">
+            <h3>
+                <br /> Enum Manipulation
+            </h3>
+            <p1>Figure 1</p1>
+            <br />
+            <img src="https://imgur.com/q9Knvzd.png" />
+            <br />
+            <br />
+            <p1>Figure 2<br /></p1>
+            <a href="https://www.dropbox.com/s/cz0c2serrk0k4sg/DAYS.java?dl=0">
+                <img src="https://imgur.com/DnRdCPf.png" />
+            </a>
+
+            <br />
+            <p1>Figure 3</p1>
+            <br />
+            <a href="https://www.dropbox.com/s/4ut18vn68lh1emz/EnumClient.java?dl=0">
+                <img src="https://imgur.com/NvEskwS.png" />
+            </a>
+        </div>
+
+        <div id="bulletPoints">
+            - Figure 1: Right Click The Java Program > New > Enum<br />
+            - Figure 2: Initializing Enum Values<br />
+            &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant array<br />
+            &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself<br/>
+            - Figure 3: values(), toString(), ordinal()<br />
+            &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums<br />
+            &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual enum value<br />
+            &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum<br />
+            &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the location of a value<br />
+
+        </div>
+
 
         <div id="ResizingArrays"></div>
         <div id="bodyHeader">
@@ -94,7 +133,7 @@
             <div id="bodyHeader">
                 <h3>
                     <br /> Quiz Date: 12/4/2017
-                </h3
+                </h3>
 
                 <div id="bulletPoints">
                     <p1>
@@ -195,7 +234,7 @@
                 <br /> &emsp;&emsp;&emsp;&emsp;- .nextLine() reads every line, there is no .nextString() method
                 <br /> &emsp;&emsp;&emsp;&emsp;- .nextInt() reads until the next int
                 <br /> &emsp;&emsp;&emsp;&emsp;- .nextDouble() reads until the next double
-                <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be reinitialized 
+                <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be reinitialized
                 <br />- any .nextMethod
                 drives the cursor forward
             </p1>
@@ -219,11 +258,11 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110565416-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-110565416-1');
+    gtag('config', 'UA-110565416-1');
 </script>
 
 </html>

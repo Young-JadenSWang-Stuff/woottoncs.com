@@ -102,8 +102,8 @@ body {
 
 .headerBox {
     margin: -10px -10px -10px -10px;
-    border: 7px red;
-    background: red;
+    border: 7px #FF6666;
+    background: #FF6666;
     position: fixed;
     top: 0;
     left: 0;
