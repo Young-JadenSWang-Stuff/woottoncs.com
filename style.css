@@ -1,5 +1,15 @@
 /*top blue menu dropdown bar*/
 
+.gist-file {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.gist-meta {
+    display: none;
+}
+
+
 .topbar {
     overflow: visible;
     background-color: #333;
