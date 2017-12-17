@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/notes.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/gist-formatting.css" />
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Manipulating Objects</title>
+</head>
+<body>
+
+    <!--Highlight-->
+    <div class="topbar">
+        <a href="./index.html">
+            Home
+        </a>
+
+        <!--dropdown for quizzes-->
+        <a class="dropbtn" id="dropdown-button">
+            Quizzes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
+            <a href="#11_15_2017.html">11/15/17: Explain OOP</a>
+        </div>
+
+        <!--dropdown for notes-->
+        <a class="dropbtn" id="dropdown-button">
+            Notes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="./OOP.html">Intro to Object Oriented Programming</a>
+            <a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
+            <a href="./FileIO.html">Fundamentals of File I/O</a>
+            <a href="./ResizeArrays.html">Resizing An Array</a>
+            <a href="./enums.html">Enum Manipulation</a>
+        </div>
+        
+        <a href="./about.html">About</a>
+
+        <a href="./quotes.html">Quotes</a>
+    </div>
+    <!--Highlight-->
+    <!-- Added the "main" wrapper to displace the entire page under the navbar -->
+    <div id="main">
+
+        <div class="grid-container">
+            <div class="item1">Manipulating Objects</div>
+            <div class="item2">
+                <script src="https://gist.github.com/JadenSWang/812064d7583f189b23081e0d3f16dd69.js"></script>
+            </div>
+            <div class="item3">
+                <p3>
+                    <br /> - Despite instance variables being marked private, the variables can still be accessed because the class is created and owned
+                    by you, the class programmer
+                    <br /> - To Access the instance variable, the object must be of the same class
+                    <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
+                    or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
+                    <br />
+                    <br /> - During <a href="oop.html">Class Composition</a>, accesssors are mandatory as you may be using classes not created by you, java has no way to verify your identity
+                    <br />
+                </p3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+

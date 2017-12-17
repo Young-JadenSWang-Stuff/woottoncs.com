@@ -1,263 +1,135 @@
 <!DOCTYPE html>
-<html>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="CSS/homePage.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 </style>
 
-<!-- 
-    SUICIDE!
--->
-
+<html>
 <head>
-    <title>Ap Programming 2 Review Corner</title>
+    <title>Wootton Ap CS</title>
     <style>
     </style>
 </head>
-
+	
 <body>
-    <div class="topbar">
-        <a href="#">Home</a>
 
-        <!--dropdown for quizzes-->
-        <a class="dropbtn" id="dropdown-button">
-            Quizzes
-            <i class="fa fa-caret-down"></i>
-        </a>
-        <div class="dropdown-content">
-            <a href="#12_4_2017">12/4/17: OOP Prog and Multiple Choice </a>
-            <a href="#11_15_2017">11/15/17: Explain OOP</a>
-        </div>
+	<!--Highlight-->
+	<div class="topbar">
+		<a href="./index.html">
+			Home
+		</a>
 
-        <!--dropdown for notes-->
-        <a class="dropbtn" id="dropdown-button">
-            Notes
-            <i class="fa fa-caret-down"></i>
-        </a>
-        <div class="dropdown-content">
-            <a href="#OOP">Intro to Object Oriented Programming</a>
-            <a href="#AccessingOtherObjects">Acessing Other Objects of the Same Class</a>
-            <a href="#FileIO">Fundamentals of File I/O</a>
-            <a href="#ResizingArrays">Resizing An Array</a>
-            <a href="#Enum">Enum Manipulation</a>
-        </div>
+		<!--dropdown for quizzes-->
+		<a class="dropbtn" id="dropdown-button">
+			Quizzes
+			<i class="fa fa-caret-down"></i>
+		</a>
+		<div class="dropdown-content">
+			<a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
+			<a href="#11_15_2017.html">11/15/17: Explain OOP</a>
+		</div>
 
-        <!--about button-->
-        <a href="#footer">About</a>
+		<!--dropdown for notes-->
+		<a class="dropbtn" id="dropdown-button">
+			Notes
+			<i class="fa fa-caret-down"></i>
+		</a>
+		<div class="dropdown-content">
+			<a href="./OOP.html">Intro to Object Oriented Programming</a>
+			<a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
+			<a href="./FileIO.html">Fundamentals of File I/O</a>
+			<a href="./ResizeArrays.html">Resizing An Array</a>
+			<a href="./enums.html">Enum Manipulation</a>
+		</div>
 
-    </div>
+		<a href="./about.html">About</a>
+
+		<a href="./quotes.html">Quotes</a>
+	</div>
+	<!--Highlight-->
 
     <!-- Added the "main" wrapper to displace the entire page under the navbar -->
     <div id="main">
-        <div id="headerFormat">
-            <div class="header">
+        <div id="grid-container">
+
+            <div class="slideshow-container">	
+                    
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="SlideShow Images/slideshow-security.jpg" style="width:1000px;height:450px">
+                    <div class="text">Succeeding a world... </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="SlideShow Images/slideshow-sliderule.jpg" style="width:1000px;height:450px"; />
+                    <div class="text">Of Slide Rules...</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="SlideShow Images/slideshow-old-computer.jpg" style="width:1000px;height:450px">
+                    <div class="text2">And Toasters ... Cough School Computers Cough ...</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="SlideShow Images/slideshow-code.jpg" style="width:1000px;height:450px" ;>
+                    <div class="text">A New Age Is Upon Us</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="SlideShow Images/slideshow-duck.jpg" style="width:1000px; height:450px" ; />
+                    <div class="text">Quack?</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+
+            <div class="title">
                 <h1>
-                    The Wootton AP Programming II Review Corner
+                    Thomas Sprigg Wootton Computer Science Program - One of the Best In Montgomery County Public Schools, Maryland
                 </h1>
-                <h2>
-                    <br /> This site is created to follow the AP CS aka AP Programming 2 cirriculum at Thomas S. Wootton High School
-                    <br /> Check here daily for Quiz Dates, Quiz Topics, and In Class Notes
-                </h2>
-                <div id='AccessOtherObjectsOfSameClass'></div>
                 <h3>
+                    This website focuses on notes and quiz dates that follows the AP Programming Course taught by the Legendary Mr. James Turner
                     <br />
-                    <br /> Quote Of The Week:
-                    <br />You work 8 hours every day so that someday you can become a boss and work 12 hours a day
+                </h3>
+
+                <h3>
+                    A Great Teacher Should Never Give A Straight Answer
                 </h3>
 
                 <br />
-            </div>
-        </div>
 
-        <!--------------------------- content starts here ------------------------->
-        <!--Div for Enum Manipulation-->
-        <div id="Enum"></div>
-
-        <div id="bodyHeader">
-            <h3>
-                <br /> Enum Manipulation
-            </h3>
-            <p1>Figure 1</p1>
-            <br />
-            <img src="https://imgur.com/q9Knvzd.png" />
-            <br />
-            <br />
-            <p1>Figure 2<br /></p1>
-            <a href="https://www.dropbox.com/s/cz0c2serrk0k4sg/DAYS.java?dl=0">
-                <img src="https://imgur.com/DnRdCPf.png" />
-            </a>
-
-            <br />
-            <p1>Figure 3</p1>
-            <br />
-            <a href="https://www.dropbox.com/s/4ut18vn68lh1emz/EnumClient.java?dl=0">
-                <img src="https://imgur.com/NvEskwS.png" />
-            </a>
-        </div>
-
-        <div id="bulletPoints">
-            - Figure 1: Right Click The Java Program > New > Enum<br />
-            - Figure 2: Initializing Enum Values<br />
-            &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant array<br />
-            &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself<br/>
-            - Figure 3: values(), toString(), ordinal()<br />
-            &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums<br />
-            &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual enum value<br />
-            &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum<br />
-            &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the location of a value<br />
-
-        </div>
-
-
-        <div id="ResizingArrays"></div>
-        <div id="bodyHeader">
-            <h3>
-                <br /> How To Resize Arrays
-            </h3>
-
-            <a href="https://www.dropbox.com/s/djljuku4bugz5le/ResizeAnArray.java?dl=0">
-                <img src="https://imgur.com/irGcwGI.png">
-            </a>
-        </div>
-
-        <!--Div for Quiz on 12/4/2017-->
-        <div id="12_4_2017"></div>
-        <br />
-
-        <div id="bulletPoints">
-            - Resizing an array requires the recopying of the entire old array and placing it into a new larger one<br />
-            - Create a temporary array an element larger<br />
-            - Loop through your original array and copy all data into the second array<br />
-            - Return the second array<br />
-        </div>
-
-        <div class="greenBoxBodyQuizzes">
-            <div id="bodyHeader">
-                <h3>
-                    <br /> Quiz Date: 12/4/2017
-                </h3>
-
-                <div id="bulletPoints">
-                    <p1>
-                        - All Code Writing & Multiple Choice
-                        <br /> - No Explaining OOP in english
-                        <br /> - Design/Testing
-                        <br /> - Static Methods and Instance Variables
-                        <br /> -
-                        <a href="#ResizingArrays"> Resize Arrays</a>
-                        Resize Arrays emphasized a lot in class, high potential to be on the test
-                        <br />
-                    </p1>
+                <div class="end-quote">
+                    <h1>
+                        "You Should Probably Do Work For Another Class If Thats What You Are Spending Your Time On" - Turner
+                    </h1>
                 </div>
             </div>
-        </div>
 
-        <!--Accessing Other Objects of the same Class-->
-        <div id="AccessingOtherObjects"></div>
-        <div id="bodyHeader">
-            <h3>
-                <br /> Short Notes on Accessing Other Objects of the Same Class
-            </h3>
-            <a href="https://www.dropbox.com/s/syrfaj6fqhw2czl/SameClassVariables.java?dl=0">
-                <img src="https://imgur.com/QbYNbXV.png">
-            </a>
-        </div>
-
-        <div id="bulletPoints">
-            - Despite instance variables being marked private, the variables can still be accessed because the class is created and owned
-            by you, the class programmer
-            <br /> - To Access the instance variable, the object must be of the same class
-            <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
-            <!---->
-            <!--Div for Quiz on OOP on 11/15/2017-->
-            <div id="11_15_2017"></div>
-            <!---->
-            or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
-        </div>
-
-        <div class="greenBoxBodyQuizzes">
-            <div id="bodyHeader">
-                <h3>
-                    <br /> Quiz Date: 11/15/2017
-                </h3>
-
-                <div id="bulletPoints">
-                    <p1>
-                        - You must be able to explain in english, what the relationships between a CLASS PROGRAMMER a CLIENT PROGRAMMER, and a USER
-                        are.
-                        <br /> - The use of the word User most likely means you are doing something incorrect
-                        <br /> - No Multiple Choice will be on the quiz
-                        <br /> - Quoting Turner: "You do not need to repeat the question back to him on the paper, this may save
-                        some of you some time.
-                        <br /> Use other(the incoming object name) and .[Variable Name]
-                        <br />
-                    </p1>
-                </div>
-            </div>
-        </div>
-
-        <!--Div for Object Oriented Programming-->
-        <div id="OOP"></div>
-        <div id="bodyHeader">
-            <h3>
-                <br /> Object Oriented Programming
-            </h3>
-            <a href="https://www.dropbox.com/s/5t1nc8hf7lr1741/Dog.java?dl=0">
-                <img src="https://imgur.com/iYXoA3T.png">
-                <a />
-        </div>
-        <div id="bulletPoints">
-            <p1>
-                <br /> - Constructors must have the same name as the class name
-                <br /> - Any Exception can be thrown but IllegalArgumentException is the most common one for incorrect input
-                <br /> - Constructors can have the same name but still be legal because of the different parameter rule
-                <br /> - Using this.(n,50) in line 17 can be used to initialize the object without changing
-                <br /> - Drives or Client Classes are only neccessary for Projects, not Homeworks
-                <br /> - All HELPER functions must be set as private as the client should not be able to use these methods
-            </p1>
-        </div>
-
-        <!--Notes On File IO-->
-        <div id="FileIO"></div>
-
-        <div id="bodyHeader">
-            <h3>
-                <br /> File Input/Output
-            </h3>
-            <a href="https://www.dropbox.com/s/nrc7ehg8gpyo27v/FileIO.java?dl=0">
-                <img src="https://imgur.com/BQGhAEA.png" width=1080>
-                <a />
-        </div>
-
-        <div id="bulletPoints">
-            <p1>
-                <br /> - All File IO should have a try-catch catching FileNotFoundExceptions or IOExceptions
-                <br /> - File Input/Output has
-                <br /> &emsp;&emsp;&emsp;&emsp;- .nextLine() reads every line, there is no .nextString() method
-                <br /> &emsp;&emsp;&emsp;&emsp;- .nextInt() reads until the next int
-                <br /> &emsp;&emsp;&emsp;&emsp;- .nextDouble() reads until the next double
-                <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be reinitialized
-                <br />- any .nextMethod
-                drives the cursor forward
-            </p1>
-        </div>
-        <div id="footer">
-            <div class="footer">
-                <h4>
-                    <br /> Created and Managed by Jaden Wang
-                    <br /> Massive Massive Thanks to Mingjie Jiang at
-                    <a href="https://mingjie.info/">
-                        https://mingjie.info/
-                        <a /> teaching me the fundamentals of HTML and CSS
-                        <br />
-                </h4>
-                <br />
-            </div>
         </div>
     </div>
 </body>
+
+</html>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110565416-1"></script>
@@ -269,4 +141,31 @@
     gtag('config', 'UA-110565416-1');
 </script>
 
-</html>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>

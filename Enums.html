@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/notes.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/gist-formatting.css" />
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+</style>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Enums</title>
+</head>
+<body>
+
+    <!--Highlight-->
+    <div class="topbar">
+        <a href="./index.html">
+            Home
+        </a>
+
+        <!--dropdown for quizzes-->
+        <a class="dropbtn" id="dropdown-button">
+            Quizzes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
+            <a href="#11_15_2017.html">11/15/17: Explain OOP</a>
+        </div>
+
+        <!--dropdown for notes-->
+        <a class="dropbtn" id="dropdown-button">
+            Notes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="./OOP.html">Intro to Object Oriented Programming</a>
+            <a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
+            <a href="./FileIO.html">Fundamentals of File I/O</a>
+            <a href="./ResizeArrays.html">Resizing An Array</a>
+            <a href="./enums.html">Enum Manipulation</a>
+        </div>
+
+        <a href="./about.html">About</a>
+
+        <a href="./quotes.html">Quotes</a>
+    </div>
+    <!--Highlight-->
+    <!-- Added the "main" wrapper to displace the entire page under the navbar -->
+    <div id="main">
+
+        <div class="grid-container">
+            <div class="item1">Enums</div>
+            <div class="item2">
+                <script src="https://gist.github.com/JadenSWang/8e04f8743ea90310dcc75a714975fb95.js"></script>
+                <script src="https://gist.github.com/JadenSWang/693143f3f13600201707591558e638e0.js"></script>
+            </div>
+            <div class="item3">
+                <p3>
+                    - Figure 1: Right Click The Java Program > New > Enum - Image: <a href="Images/Creating An Enum File.jpg">Here</a><br /> 
+                    - Figure 2: Initializing Enum Values<br />
+                    &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant array<br />
+                    &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself<br />
+                    - Figure 3: values(), toString(), ordinal()<br />
+                    &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums<br />
+                    &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual enum value<br />
+                    &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum<br />
+                    &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the location of a value<br />
+                </p3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
