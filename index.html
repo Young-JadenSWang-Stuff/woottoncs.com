@@ -1,108 +1,56 @@
 <!DOCTYPE html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="CSS/homePage.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-	@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css');
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-</style>
-
 <html>
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/homePage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link ref="stylesheet" href="https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css" />
+    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+
     <title>Wootton Ap CS</title>
-    <style>
-    </style>
 </head>
-	
+
 <body>
 
-	<!--Highlight-->
-	<div class="topbar">
-		<a href="./index.html">
-			Home
-		</a>
+    <!--Highlight-->
+    <div class="topbar">
+        <a href="./index.html">
+            Home
+        </a>
 
-		<!--dropdown for quizzes-->
-		<a class="dropbtn" id="dropdown-button">
-			Quizzes
-			<i class="fa fa-caret-down"></i>
-		</a>
-		<div class="dropdown-content">
-			<a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
-			<a href="#11_15_2017.html">11/15/17: Explain OOP</a>
-		</div>
+        <!--dropdown for quizzes-->
+        <a class="dropbtn" id="dropdown-button">
+            Quizzes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
+            <a href="#11_15_2017.html">11/15/17: Explain OOP</a>
+        </div>
 
-		<!--dropdown for notes-->
-		<a class="dropbtn" id="dropdown-button">
-			Notes
-			<i class="fa fa-caret-down"></i>
-		</a>
-		<div class="dropdown-content">
-			<a href="./OOP.html">Intro to Object Oriented Programming</a>
-			<a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
-			<a href="./FileIO.html">Fundamentals of File I/O</a>
-			<a href="./ResizeArrays.html">Resizing An Array</a>
-			<a href="./enums.html">Enum Manipulation</a>
-		</div>
+        <!--dropdown for notes-->
+        <a class="dropbtn" id="dropdown-button">
+            Notes
+            <i class="fa fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+            <a href="./OOP.html">Intro to Object Oriented Programming</a>
+            <a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
+            <a href="./FileIO.html">Fundamentals of File I/O</a>
+            <a href="./ResizeArrays.html">Resizing An Array</a>
+            <a href="./enums.html">Enum Manipulation</a>
+        </div>
 
-		<a href="./about.html">About</a>
+        <a href="./about.html">About</a>
 
-		<a href="./quotes.html">Quotes</a>
-	</div>
-	<!--Highlight-->
+        <a href="./quotes.html">Quotes</a>
+    </div>
+    <!--Highlight-->
 
     <!-- Added the "main" wrapper to displace the entire page under the navbar -->
     <div id="main">
         <div id="grid-container">
-
-            <div class="slideshow-container">	
-                    
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="SlideShow Images/slideshow-security.jpg" style="width:1000px;height:450px">
-                    <div class="text">Succeeding a world... </div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="SlideShow Images/slideshow-sliderule.jpg" style="width:1000px;height:450px"; />
-                    <div class="text">Of Slide Rules...</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="SlideShow Images/slideshow-old-computer.jpg" style="width:1000px;height:450px">
-                    <div class="text2">And Toasters ... Cough School Computers Cough ...</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="SlideShow Images/slideshow-code.jpg" style="width:1000px;height:450px" ;>
-                    <div class="text">A New Age Is Upon Us</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="SlideShow Images/slideshow-duck.jpg" style="width:1000px; height:450px" ; />
-                    <div class="text">Quack?</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-
             <div class="title">
                 <h1>
                     Thomas Sprigg Wootton Computer Science Program - One of the Best In Montgomery County Public Schools, Maryland
@@ -127,45 +75,18 @@
 
         </div>
     </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110565416-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110565416-1');
+    </script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110565416-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110565416-1');
-</script>
-
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-</script>

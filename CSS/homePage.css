@@ -12,25 +12,25 @@
     width: 100%;
 }
 
-    .topbar a {
-        float: inherit;
-        font-size: 15px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+.topbar a {
+    float: inherit;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
-        .topbar a:hover {
-            background-color: #7289da;
-            color: white;
-        }
+.topbar a:hover {
+    background-color: #7289da;
+    color: white;
+}
 
-        .topbar a:active {
-            color: #7289da;
-        }
+.topbar a:active {
+    color: #7289da;
+}
 
 /*The Dropdown Portion*/
 
@@ -54,22 +54,22 @@
     background-color: #7289da;
     min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 10;
+    z-index: 9999;
     color: black;
     margin-top: 48px;
 }
 
-    .dropdown-content a {
-        color: white;
-        text-align: center;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+.dropdown-content a {
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-        .dropdown-content a:hover {
-            background-color: #333;
-        }
+.dropdown-content a:hover {
+    background-color: #333;
+}
 
 .dropdown:hover .dropbtn {
     background-color: #333;
@@ -80,16 +80,16 @@
  * See adjacent selector for more.
  * https://www.w3.org/TR/CSS21/selector.html#adjacent-selectors
  */
-#dropdown-button:hover + .dropdown-content, .dropdown-content:hover {
+
+#dropdown-button:hover+.dropdown-content, .dropdown-content:hover {
     display: block;
 }
 
-
 /* Slideshow container */
-.slideshow-container {
+
+.slideshow-container, .fade {
     padding-top: 20px;
     max-width: 1000px;
-    position: relative;
     margin: auto;
 }
 
@@ -105,6 +105,7 @@
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    z-index: 10;
 }
 
 .next {
@@ -112,30 +113,8 @@
     border-radius: 3px 0 0 3px;
 }
 
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-.text {
-    font-size: 28px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-family: "Open Sans";
-    color: #d7d7d7;
-}
-
-.text2 {
-    color: black;
-    font-size: 28px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-family: "Open Sans";
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .numbertext {
@@ -157,23 +136,14 @@
     transition: background-color 0.6s ease;
 }
 
-    .active, .dot:hover {
-        background-color: #717171;
-    }
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 @-webkit-keyframes fade {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -183,7 +153,6 @@
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -196,6 +165,7 @@
 }
 
 /*main*/
+
 body {
     padding-top: 50px;
 }
@@ -224,4 +194,3 @@ body {
     margin-left: -7px;
     margin-bottom: -200px;
 }
-
