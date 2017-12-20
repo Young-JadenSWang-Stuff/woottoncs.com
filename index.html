@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/homePage.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link ref="stylesheet" href="https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css" />
-    <link ref="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/lonekorean/gist-syntax-themes/848d6580/stylesheets/monokai.css" />
+    <link rel="stylesheet" href="CSS/notes.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 
     <title>Wootton Ap CS</title>
 </head>
 
 <body>
-    <!--suicide-->
-
     <!--Highlight-->
     <div class="topbar">
-        <a href="./index.html">
+
+        <a href="" onclick="load('oop')">
             Home
         </a>
 
@@ -25,10 +25,12 @@
             Quizzes
             <i class="fa fa-caret-down"></i>
         </a>
+
         <div class="dropdown-content">
             <a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
             <a href="#11_15_2017.html">11/15/17: Explain OOP</a>
         </div>
+
 
         <!--dropdown for notes-->
         <a class="dropbtn" id="dropdown-button">
@@ -51,8 +53,14 @@
 
     <!-- Added the "main" wrapper to displace the entire page under the navbar -->
     <div id="main">
-        <div id="grid-container">
+        <div id="home">
+
             <div class="title">
+
+                <img src="Images/duck.jpg" alt="Duck" style="height:525px;width:1000px">
+                <br />
+                Quack?
+
                 <h1>
                     Thomas Sprigg Wootton Computer Science Program - One of the Best In Montgomery County Public Schools, Maryland
                 </h1>
@@ -62,7 +70,7 @@
                 </h3>
 
                 <h3>
-                    A Great Teacher Should Never Give A Straight Answer
+                    A Great Teacher Never Gives A Straight Answer
                 </h3>
 
                 <br />
@@ -75,6 +83,153 @@
             </div>
 
         </div>
+
+        <!--String Formatting-->
+        <div id="StringFormatting">
+            <div class="grid-container">
+                <div class="item1">Formatting Strings</div>
+                <div class="item2">
+
+                </div>
+                <div class="item3">
+
+                </div>
+            </div>
+        </div>
+
+        <!--File Output-->
+        <div id="FileOutput">
+            <div class="grid-container">
+                <div class="item1">File Output</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/fc7c3f4a6a1f78317b2b559d5eb7d1a8.js"></script>
+                </div>
+                <div class="item3">
+
+                </div>
+            </div>
+        </div>
+
+        <!--OOP-->
+        <div id="oop">
+            <div class="grid-container">
+                <div class="item1">Introduction to Object Oriented Programming</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/463ec0acca1c42d54d34475ddfab6d78.js"></script>
+                </div>
+                <div class="item3">
+                    <p3>
+                        <br /> - Constructors must have the same name as the class name
+                        <br /> - Any Exception can be thrown, here are some common ones
+                        <br />&emsp;&emsp;&emsp; - FileNotFoundException
+                        <br />&emsp;&emsp;&emsp; - IOException
+                        <br />&emsp;&emsp;&emsp; - IndexOutOfBoundsException
+                        <br />&emsp;&emsp;&emsp; - IllegalArgumentException
+                        <br /> - Constructors can have the same name but still be legal because of the different parameter rule
+                        <br /> - Using this.(n,50) in line 17 can be used to initialize the object without changing
+                        <br />
+                        <br /> - Drivers or Client Classes are only neccessary for Projects, not Homeworks
+                        <br /> - All HELPER functions must be set as private as the client should not be able to use these methods
+                        <br />
+                        <br /> - Class Composition is when you incorporate other classes you write into your current class
+                    </p3>
+                </div>
+            </div>
+        </div>
+
+        <!--Enums-->
+        <div id="enums">
+            <div class="grid-container">
+                <div class="item1">Enums</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/8e04f8743ea90310dcc75a714975fb95.js"></script>
+                    <script src="https://gist.github.com/JadenSWang/693143f3f13600201707591558e638e0.js"></script>
+                </div>
+                <div class="item3">
+                    <p3>
+                        - Figure 1: Right Click The Java Program > New > Enum - Image: <a href="Images/Creating An Enum File.jpg">Here</a><br />
+                        - Figure 2: Initializing Enum Values<br />
+                        &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant array<br />
+                        &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself<br />
+                        - Figure 3: values(), toString(), ordinal()<br />
+                        &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums<br />
+                        &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual enum value<br />
+                        &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum<br />
+                        &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the location of a value<br />
+                    </p3>
+                </div>
+            </div>
+        </div>
+
+        <!--File Input-->
+        <div id="FileInput">
+            <div class="grid-container">
+                <div class="item1">File Input</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/0c97f358dc05766aec4ca5f1ef694927.js"></script>
+                </div>
+                <div class="item3">
+                    <p3>
+                        <br /> - All File IO should have a try-catch catching FileNotFoundExceptions or IOExceptions
+                        <br /> - File Input has
+                        <br /> &emsp;&emsp;&emsp;- .nextLine() reads every line, there is no &emsp;&emsp;&emsp;&emsp;.nextString() method as String is technically &emsp;&emsp;&emsp;&emsp;an object, despite exhibiting primitive like &emsp;&emsp;&emsp;&emsp;behaivior
+                        <br /> &emsp;&emsp;&emsp;- .nextInt() reads until the next int
+                        <br /> &emsp;&emsp;&emsp;- .nextDouble() reads until the next double
+                        <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be reinitialized, yes this requires another try catch
+                        <br />
+                        <br /> - any .next[value] Method drives the cursor forward
+                        <br /> - if you have an infinite loop, chances are, you didnt use a .next method to drive your "cursor" forward
+
+                    </p3>
+                </div>
+            </div>
+        </div>
+
+        <!--File Output-->
+        <div id="FileOutput">
+
+        </div>
+
+        <!--ResizeArrays-->
+        <div id="ResizeArrays">
+            <div class="grid-container">
+                <div class="item1">Resizing Arrays</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/e33e701fc5ad07b4e1735019fe52ae65.js"></script>
+                </div>
+                <div class="item3">
+                    <br /> - Resizing an array requires the recopying of the entire old array and placing it into a new larger one
+                    <br /> - Create a temporary array an element larger
+                    <br />- Loop through your original array and copy all data into the second array
+                    <br /> - Return the second array
+                </div>
+            </div>
+        </div>
+
+        <!--AccessingObjects-->
+        <div id="AccessingObjects">
+            <div class="grid-container">
+                <div class="item1">Manipulating Objects</div>
+                <div class="item2">
+                    <script src="https://gist.github.com/JadenSWang/812064d7583f189b23081e0d3f16dd69.js"></script>
+    </div>
+                <div class="item3">
+                    <p3>
+                        <br /> - Despite instance variables being marked private, the variables can still be accessed because the class is created and owned
+                        by you, the class programmer
+                        <br /> - To Access the instance variable, the object must be of the same class
+                        <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
+                        or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
+                        <br />
+                        <br /> - During <a href="oop.html">Class Composition</a>, accesssors are mandatory as you may be using classes not created by you, java has no way to verify your identity
+                        <br />
+                    </p3>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -88,6 +243,23 @@
     </script>
 
     <script src="js/main.js"></script>
+
+    <script>
+        function load(div) {
+
+            document.getElementById(div).style.display("block");
+
+            var divs = ["oop", "enums", "FileInput", "FileOutput", "ResizeArrays", "AccessingObjects", "StringFormatting"];
+            console.log(divs);
+
+            for (i = 0; i < divs.length; i++) {
+                if (div !== divs[i]) {
+                    document.getElementById(divs[i]).style.display("none");
+                }
+            }
+
+        }
+    </script>
 </body>
 
 </html>
