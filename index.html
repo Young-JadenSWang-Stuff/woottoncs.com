@@ -16,7 +16,7 @@
     <!--Highlight-->
     <div class="topbar">
 
-        <a href="" onclick="load('oop')">
+        <a href="#" onclick="load('home')">
             Home
         </a>
 
@@ -27,8 +27,12 @@
         </a>
 
         <div class="dropdown-content">
-            <a href="#12_4_2017.html">12/4/17: OOP Prog and Multiple Choice </a>
-            <a href="#11_15_2017.html">11/15/17: Explain OOP</a>
+            <a href="#" onclick="load('12_4_17')">
+                12/4/17: OOP Prog and Multiple Choice </a>
+
+            <a href="#" onclick="load('11_15_17')">
+                11/15/17: Explain OOP
+            </a>
         </div>
 
 
@@ -38,16 +42,26 @@
             <i class="fa fa-caret-down"></i>
         </a>
         <div class="dropdown-content">
-            <a href="./OOP.html">Intro to Object Oriented Programming</a>
-            <a href="./AccessingObjects.html">Acessing Other Objects of the Same Class</a>
-            <a href="./FileIO.html">Fundamentals of File I/O</a>
-            <a href="./ResizeArrays.html">Resizing An Array</a>
-            <a href="./enums.html">Enum Manipulation</a>
+            <a href="#" onclick="load('oop')">
+                Intro to Object Oriented Programming</a>
+            <a href="#" onclick="load('AccessingObjects')">
+                Acessing Other Objects of the Same Class</a>
+            <a href="#" onclick="load('FileInput')">
+                File Input (Reading From A File)</a>
+            <a href="#" onclick="load('FileOutput')">
+                File Output (Writing To A File)
+            </a>
+            <a href="#" onclick="load('ResizeArrays')">
+                Resizing An Array</a>
+            <a href="#" onclick="load('enums')">
+                Enum Manipulation</a>
+            <a href="#" onclick="load('FormattingStrings')">
+                Formatting Strings</a>
+
         </div>
 
-        <a href="./about.html">About</a>
-
-        <a href="./quotes.html">Quotes</a>
+        <a href="#" onclick="load('about')">
+            About</a>
     </div>
     <!--Highlight-->
 
@@ -58,8 +72,7 @@
             <div class="title">
 
                 <img src="Images/duck.jpg" alt="Duck" style="height:525px;width:1000px">
-                <br />
-                Quack?
+                <br /> Quack?
 
                 <h1>
                     Thomas Sprigg Wootton Computer Science Program - One of the Best In Montgomery County Public Schools, Maryland
@@ -81,7 +94,6 @@
                     </h1>
                 </div>
             </div>
-
         </div>
 
         <!--String Formatting-->
@@ -89,13 +101,14 @@
             <div class="grid-container">
                 <div class="item1">Formatting Strings</div>
                 <div class="item2">
-
+                    Coming Soon...
                 </div>
                 <div class="item3">
-
+                    
                 </div>
             </div>
         </div>
+
 
         <!--File Output-->
         <div id="FileOutput">
@@ -105,12 +118,13 @@
                     <script src="https://gist.github.com/JadenSWang/fc7c3f4a6a1f78317b2b559d5eb7d1a8.js"></script>
                 </div>
                 <div class="item3">
-
+                    Coming Soon...
                 </div>
             </div>
         </div>
 
         <!--OOP-->
+
         <div id="oop">
             <div class="grid-container">
                 <div class="item1">Introduction to Object Oriented Programming</div>
@@ -147,21 +161,27 @@
                 </div>
                 <div class="item3">
                     <p3>
-                        - Figure 1: Right Click The Java Program > New > Enum - Image: <a href="Images/Creating An Enum File.jpg">Here</a><br />
-                        - Figure 2: Initializing Enum Values<br />
-                        &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant array<br />
-                        &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself<br />
-                        - Figure 3: values(), toString(), ordinal()<br />
-                        &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums<br />
-                        &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual enum value<br />
-                        &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum<br />
-                        &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the location of a value<br />
+                        - Figure 1: Right Click The Java Program > New > Enum - Image:
+                        <a href="Images/Creating An Enum File.jpg">Here</a>
+                        <br /> - Figure 2: Initializing Enum Values
+                        <br /> &emsp;&emsp;&emsp; - An Enum File is basically a collection of constants, similar to a constant
+                        array
+                        <br /> &emsp;&emsp;&emsp; - Stylistcally, all values should be capitalized as well as the Enum name itself
+                        <br /> - Figure 3: values(), toString(), ordinal()
+                        <br /> &emsp;&emsp;&emsp; - values() method stores the values inside the enum file into an array of enums
+                        <br /> &emsp;&emsp;&emsp; - the enum is effecively a new data type and can be used to store an individual
+                        enum value
+                        <br /> &emsp;&emsp;&emsp; - toString() method changes any value inside the enum to a string, ie. enum
+                        <br /> &emsp;&emsp;&emsp; - ordinal() a sort of indexOf(), ordinal finds and returns the integer of the
+                        location of a value
+                        <br />
                     </p3>
                 </div>
             </div>
         </div>
 
         <!--File Input-->
+
         <div id="FileInput">
             <div class="grid-container">
                 <div class="item1">File Input</div>
@@ -172,64 +192,70 @@
                     <p3>
                         <br /> - All File IO should have a try-catch catching FileNotFoundExceptions or IOExceptions
                         <br /> - File Input has
-                        <br /> &emsp;&emsp;&emsp;- .nextLine() reads every line, there is no &emsp;&emsp;&emsp;&emsp;.nextString() method as String is technically &emsp;&emsp;&emsp;&emsp;an object, despite exhibiting primitive like &emsp;&emsp;&emsp;&emsp;behaivior
+                        <br /> &emsp;&emsp;&emsp;- .nextLine() reads every line, there is no &emsp;&emsp;&emsp;&emsp;.nextString()
+                        method as String is technically &emsp;&emsp;&emsp;&emsp;an object, despite exhibiting primitive like
+                        &emsp;&emsp;&emsp;&emsp;behaivior
                         <br /> &emsp;&emsp;&emsp;- .nextInt() reads until the next int
                         <br /> &emsp;&emsp;&emsp;- .nextDouble() reads until the next double
-                        <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be reinitialized, yes this requires another try catch
+                        <br /> - To move the "cursor" where the compuer looks at each line back to the top, the scanner must be
+                        reinitialized, yes this requires another try catch
                         <br />
                         <br /> - any .next[value] Method drives the cursor forward
-                        <br /> - if you have an infinite loop, chances are, you didnt use a .next method to drive your "cursor" forward
+                        <br /> - if you have an infinite loop, chances are, you didnt use a .next method to drive your "cursor"
+                        forward
 
                     </p3>
                 </div>
             </div>
         </div>
-
-        <!--File Output-->
-        <div id="FileOutput">
-
-        </div>
-
-        <!--ResizeArrays-->
-        <div id="ResizeArrays">
-            <div class="grid-container">
-                <div class="item1">Resizing Arrays</div>
-                <div class="item2">
-                    <script src="https://gist.github.com/JadenSWang/e33e701fc5ad07b4e1735019fe52ae65.js"></script>
-                </div>
-                <div class="item3">
-                    <br /> - Resizing an array requires the recopying of the entire old array and placing it into a new larger one
-                    <br /> - Create a temporary array an element larger
-                    <br />- Loop through your original array and copy all data into the second array
-                    <br /> - Return the second array
-                </div>
-            </div>
-        </div>
-
-        <!--AccessingObjects-->
-        <div id="AccessingObjects">
-            <div class="grid-container">
-                <div class="item1">Manipulating Objects</div>
-                <div class="item2">
-                    <script src="https://gist.github.com/JadenSWang/812064d7583f189b23081e0d3f16dd69.js"></script>
     </div>
-                <div class="item3">
-                    <p3>
-                        <br /> - Despite instance variables being marked private, the variables can still be accessed because the class is created and owned
-                        by you, the class programmer
-                        <br /> - To Access the instance variable, the object must be of the same class
-                        <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
-                        or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
-                        <br />
-                        <br /> - During <a href="oop.html">Class Composition</a>, accesssors are mandatory as you may be using classes not created by you, java has no way to verify your identity
-                        <br />
-                    </p3>
-                </div>
+
+    <!--ResizeArrays-->
+
+    <div id="ResizeArrays">
+        <div class="grid-container">
+            <div class="item1">Resizing Arrays</div>
+            <div class="item2">
+                <script src="https://gist.github.com/JadenSWang/e33e701fc5ad07b4e1735019fe52ae65.js"></script>
+            </div>
+            <div class="item3">
+                <br /> - Resizing an array requires the recopying of the entire old array and placing it into a new larger one
+                <br /> - Create a temporary array an element larger
+                <br />- Loop through your original array and copy all data into the second array
+                <br /> - Return the second array
             </div>
         </div>
+    </div>
 
+    <!--AccessingObjects-->
 
+    <div id="AccessingObjects">
+        <div class="grid-container">
+            <div class="item1">Manipulating Objects</div>
+            <div class="item2">
+                <script src="https://gist.github.com/JadenSWang/812064d7583f189b23081e0d3f16dd69.js"></script>
+            </div>
+            <div class="item3">
+                <p3>
+                    <br /> - Despite instance variables being marked private, the variables can still be accessed because the class
+                    is created and owned by you, the class programmer
+                    <br /> - To Access the instance variable, the object must be of the same class
+                    <br /> - Since Objects merely POINT to the location on the heap from the stack, everything that is not a primitive
+                    or a string must be deep copied. This is to avoid changing the data in array2 when editing array1
+                    <br />
+                    <br /> - During
+                    <a href="#" onclick="load('oop')">Class Composition</a>, accesssors are mandatory as you may be using classes not created by you, java
+                    has no way to verify your identity
+                    <br />
+                </p3>
+            </div>
+        </div>
+    </div>
 
+    <!--About-->
+
+    <div id="about">
+        Coming Soon...
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -244,22 +270,6 @@
 
     <script src="js/main.js"></script>
 
-    <script>
-        function load(div) {
-
-            document.getElementById(div).style.display("block");
-
-            var divs = ["oop", "enums", "FileInput", "FileOutput", "ResizeArrays", "AccessingObjects", "StringFormatting"];
-            console.log(divs);
-
-            for (i = 0; i < divs.length; i++) {
-                if (div !== divs[i]) {
-                    document.getElementById(divs[i]).style.display("none");
-                }
-            }
-
-        }
-    </script>
 </body>
 
 </html>
