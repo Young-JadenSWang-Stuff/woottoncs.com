@@ -303,10 +303,3 @@ body {
 #about {
     display: none;
 }
-
-.about-body {
-    font-size: 30px;
-    text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
-}
