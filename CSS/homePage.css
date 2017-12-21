@@ -226,7 +226,7 @@ body {
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     padding-right: 0px;
     margin-right: 0px;
     z-index: -1;
@@ -236,7 +236,7 @@ body {
     margin-top: 30px;
     grid-row-start: 2;
     grid-row-end: 6;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 6;
     text-align: left;
     padding-left: 100px;
