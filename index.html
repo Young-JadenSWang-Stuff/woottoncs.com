@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="CSS/gist.css" />
     <link rel="stylesheet" href="CSS/font.css" />
 
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3668432536161662",
+        enable_page_level_ads: true
+      });
+    </script> 
+    
     <title>Wootton Ap CS</title>
 </head>
 
@@ -14,7 +22,7 @@
     <!--Highlight-->
     <div class="topbar">
 
-        <a href="#" onclick="load('home')"> 
+        <a href="#" onclick="load('home')">
             Home
         </a>
 
@@ -51,7 +59,7 @@
                 Resizing An Array</a>
             <a href="#" onclick="load('enums')">
                 Enum Manipulation</a>
-            <a href="#" onclick="load('FormattingStrings')">
+            <a href="#" onclick="load('StringFormatting')">
                 Formatting Strings</a>
 
         </div>
@@ -97,10 +105,36 @@
             <div class="grid-container">
                 <div class="item1">Formatting Strings</div>
                 <div class="item2">
-                    Coming Soon...
+                    <script src="https://gist.github.com/JadenSWang/ea6d74469b2908820c13c7c98c0c0ee2.js"></script>
                 </div>
                 <div class="item3">
-                    
+                    <p3>
+                        <br /> - String formatting uses the format method called on the String class
+                        <br /> - The first parameter is a string parameter that tells the method how to format each String
+                        <br />
+                        <br /> - To tell the method which piece of information in your format parameter you need to use the % symbol
+                        <br /> - Lets say you have 3 strings to format: Name, Date, Period
+                        <br /> - The format method is expecting 3 segments in our format parameter starting with the % symbol
+                        <br /> - Name is a String, Date is a String, Period is a number (integer)
+                        <br />
+                        <br /> - The template for each format piece is percent sign (%)
+                        <br /> - A sign to indicate alignment (- for left align, nothing for right align)
+                        <br />
+                        <br /> - Strings are represented with an S
+                        <br /> - Characters are represented with a C
+                        <br /> - Integers are represented with a D
+                        <br /> - Doubles are represented with a F
+                        <br />
+                        <br /> - Lets say we want to align everything to the left with 20 spaces allocated for each element
+                        <br /> - First, we need to do the first two strings, %-20s %-20s
+                        <br /> - Then for the third parameter we need a %-20d
+                        <br />
+                        <br /> - To reuse our format many times and keep our code consice, we should save the format to a string
+                        <br /> - String format = "%-20s %-20s %-20d";
+                        <br />
+                        <br /> - parameters are separated with a comma
+                        <br /> - String.format(format, "Chicken", "11/11/11", 38);
+                    </p3>
                 </div>
             </div>
         </div>
@@ -109,12 +143,17 @@
         <!--File Output-->
         <div id="FileOutput">
             <div class="grid-container">
-                <div class="item1">File Output</div>
+                <div class="item1">Writing to a File</div>
                 <div class="item2">
                     <script src="https://gist.github.com/JadenSWang/fc7c3f4a6a1f78317b2b559d5eb7d1a8.js"></script>
                 </div>
                 <div class="item3">
-                    Coming Soon...
+                    <br /> - First, write a try catch statement to create the file 
+                    <br /> - System.exit(-1); is to be used when you are in way too deep and have no way to return out, do not use this extensively
+                    <br /> - Write another try catch to begin writing to a the file
+                    <br /> - Use the method write()  to begin writing
+                    <br /> - add the escape sequences "\r\n" to create a line break (go to the next line)
+                    <br /> - After you finish writing, use the close() method to indicate that you are done with the file, this effectively saves the file
                 </div>
             </div>
         </div>
@@ -250,7 +289,7 @@
 
     <!--About-->
 
-    <div id="about">     
+    <div id="about">
         <div class="title">
             <h1>
                 Hello My Fellow Students...
@@ -265,7 +304,7 @@
                 Others may not...
             </h4>
             <h2>
-                Oh btw if your name happens to be James Turner... 
+                Oh btw if your name happens to be James Turner...
             </h2>
             <h5>
                 I really need an A in ur class...
@@ -274,21 +313,21 @@
                 Maybe?
             </h6>
             <h1>
-                <br/>
-                So who am i?
+                <br/> So who am i?
             </h1>
 
-                <p1>
-                I am Shiteng Jaden Wang and im in 10th grade in Mr.Turner's Class.<br/>
-                Sometimes, I doze off in a class and I miss some very important notes or I just dont understand...<br/>
-                Anyways, I created this website becauase I've always wanted a site of my own, despite the fact that Mingjie Jiang purchased the site on my behalf. 
-                1/2 because im broke, the other 1/2 because he offered, its part of his "sponsorship program" which means you should probably check him out, 
-                <a href="https://www.mingjie.info" target="_blank">Jimmy</a>, or else maybe he's going to revoke my sponsorship and I wont be able to rant to you guys. 
-                Hopefully you find my notes and quiz dates useful as I will be going to be updating this website throughout my year in Turner's Class... And hopefully
-                throughout programming 3/4 if Turner's ranting still makes sense to me.<br/><br/>
-
-                Oh Btw, I like ducks.
-        </p1>
+            <p1>
+                I am Shiteng Jaden Wang and im in 10th grade in Mr.Turner's Class.
+                <br/> Sometimes, I doze off in a class and I miss some very important notes or I just dont understand...
+                <br/> Anyways, I created this website becauase I've always wanted a site of my own, despite the fact that Mingjie
+                Jiang purchased the site on my behalf. 1/2 because im broke, the other 1/2 because he offered, its part of
+                his "sponsorship program" which means you should probably check him out,
+                <a href="https://www.mingjie.info" target="_blank">Jimmy</a>, or else maybe he's going to revoke my sponsorship and I wont be able to rant to you guys. Hopefully
+                you find my notes and quiz dates useful as I will be going to be updating this website throughout my year
+                in Turner's Class... And hopefully throughout programming 3/4 if Turner's ranting still makes sense to me.
+                <br/>
+                <br/> Oh Btw, I like ducks.
+            </p1>
         </div>
     </div>
 
@@ -305,6 +344,7 @@
     <script src="js/main.js"></script>
 
     <script src="js/snake.js"></script>
+    
 </body>
 
 </html>
